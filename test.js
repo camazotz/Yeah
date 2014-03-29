@@ -1,7 +1,7 @@
 console.log('Whattaaaaaap');
 
 simply.on('singleClick', function(e) {
-  console.log(util2.format('single clicked $button!', e));
+  console.log(util2.format('yeahhhh $button!', e));
   simply.vibe();
   simply.subtitle('Pressed ' + e.button + '!');
   
