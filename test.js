@@ -6,7 +6,7 @@ simply.on('singleClick', function(e) {
   simply.vibe();
   simply.on('accelTap', function(e) {
   	simply.subtitle('Tapped' + e.axis);
-  	if (e.axis == 'y')
+  	if (e.axis === 'y')
   	{
   		simply.subtitle('Success!!');
   	}
