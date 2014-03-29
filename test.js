@@ -1,10 +1,17 @@
 console.log('Whattaaaaaap');
 
+
 simply.on('singleClick', function(e) {
   console.log(util2.format('single clicked $button!', e));
   simply.vibe();
-  simply.subtitle('Yeahhhh ' + e.button + '!');
-  
+  simply.on('accelTap', function(e) {
+  	simply.subtitle('Tapped' + e.axis);
+  	if (e.axis == 'y')
+  	{
+  		simply.subtitle('Success!!');
+  	}
+  })
+  simply.subtitle('Pressed ' + e.button + '!');
 });
 
 simply.on('longClick', function(e) {
