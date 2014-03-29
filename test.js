@@ -2,8 +2,9 @@ console.log('Whattaaaaaap');
 
 simply.on('singleClick', function(e) {
   console.log(util2.format('single clicked $button!', e));
+  simply.vibe();
   simply.subtitle('Pressed ' + e.button + '!');
-  simple.vibe();
+  
 });
 
 simply.on('longClick', function(e) {
