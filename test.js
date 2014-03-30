@@ -1,7 +1,7 @@
 console.log('Whattaaaaaap');
 
 
-simply.on('singleClick', function(e) {
+/*simply.on('singleClick', function(e) {
   console.log(util2.format('single clicked $button!', e));
   simply.vibe();
   simply.on('accelData', function(e) {
@@ -19,7 +19,7 @@ simply.on('singleClick', function(e) {
   	}
   })
   simply.subtitle('Pressed ' + e.button + '!');
-});
+});*/
 
 
 simply.on('longClick', function(e) {
@@ -29,8 +29,18 @@ simply.on('longClick', function(e) {
 });
 
 simply.on('accelTap', function(e) {
-  console.log(util2.format('tapped accel axis $axis $direction!', e));
-  simply.subtitle('wrong move');
+  simply.body(e.accel.x + "  " + e.accel.y);
+  	
+  	if (e.accel.x > 200 && e.accel.y > 200)
+  	{
+  	  simply.subtitle('It is positive');
+  	}
+  	
+  	//simply.subtitle('Tapped' + e.axis);
+  	if (e.axis === 'y')
+  	{
+  		simply.subtitle('Success!!');
+  	}
 });
 
 simply.setText({
