@@ -30,7 +30,7 @@ simply.on('longClick', function(e) {
   simply.scrollable(e.button !== 'select');
 });
 
-simply.on('accelTap', function(e) {
+simply.on('accelData', function(e) {
   simply.body(e.accel.x + "  " + e.accel.y);
   simply.subtitle('Version: 2B');
   	/*
