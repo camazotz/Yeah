@@ -17,7 +17,7 @@ simply.on('longClick', function(e) {
 });
 
 simply.on('accelData', function(e) {
-  simply.body(e.accel[0].x + "  " + e.accel[0].y);
+  simply.body(e.accel.x + "  " + e.accel.y);
   simply.subtitle('Version: 2B');
 
   
