@@ -1,10 +1,10 @@
 console.log('Whattaaaaaap');
 
 
-/*simply.on('singleClick', function(e) {
+simply.on('singleClick', function(e) {
   console.log(util2.format('single clicked $button!', e));
   simply.vibe();
-  simply.on('accelData', function(e) {
+  /*simply.on('accelData', function(e) {
   	simply.body(e.accel.x + "  " + e.accel.y);
   	
   	if (e.accel.x > 200 && e.accel.y > 200)
@@ -17,9 +17,9 @@ console.log('Whattaaaaaap');
   	{
   		simply.subtitle('Success!!');
   	}
-  })
+  })*/
   simply.subtitle('Pressed ' + e.button + '!');
-});*/
+});
 
 
 simply.on('longClick', function(e) {
