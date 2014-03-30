@@ -1,0 +1,23 @@
+int main(void) {
+	init();
+	app_event_loop();
+
+}
+
+static void init() {
+	window = window_create();
+	accel_data_service_subscribe(5, &accel_data_handler);
+  	accel_service_set_sampling_rate(ACCEL_SAMPLING_50HZ);
+}
+
+static void deinit()
+{
+  accel_data_service_unsubscribe();
+  window_destroy(window);
+}
+
+void accel_data_handler(AccelData *data, uint32_t num_samples)
+{
+	vibes_long_pulse();
+}
+
