@@ -20,11 +20,11 @@ simply.on('accelData', function(e) {
   simply.body(e.accel.x + "  " + e.accel.y);
   simply.subtitle('Version: 2B');
 
-  /*
+  
   	if (e.accel.x > 200 && e.accel.y > 200)
   	{
   	  simply.subtitle('It is positive');
-  	}*/
+  	}
   	
 });
 
