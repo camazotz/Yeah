@@ -31,16 +31,11 @@ simply.on('longClick', function(e) {
 simply.on('accelTap', function(e) {
   simply.body(e.accel.x + "  " + e.accel.y);
   	
-  	if (e.accel.x > 200 && e.accel.y > 200)
+  	if (e.accel.x > 200 || e.accel.y > 200)
   	{
   	  simply.subtitle('It is positive');
   	}
   	
-  	//simply.subtitle('Tapped' + e.axis);
-  	if (e.axis === 'y')
-  	{
-  		simply.subtitle('Success!!');
-  	}
 });
 
 simply.setText({
