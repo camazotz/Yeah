@@ -17,11 +17,11 @@ simply.on('longClick', function(e) {
 });
 
 simply.on('accelData', function(e) {
-  simply.body(e.accel.x + "  " + e.accel.y);
+  simply.body(e.accel[0].x + "  " + e.accel[0].y);
   simply.subtitle('Version: 2B');
 
   
-  	if (e.accel.x > 100 || e.accel.y > 100)
+  	if (e.accel.x > 200 && e.accel.y > 200)
   	{
   	  simply.subtitle('It is positive');
   	}
