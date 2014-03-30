@@ -21,7 +21,7 @@ simply.on('accelData', function(e) {
   simply.subtitle('Version: 2B');
 
   
-  	if (e.accel.x > 200 && e.accel.y > 200)
+  	if (e.accel.x > 100 || e.accel.y > 100)
   	{
   	  simply.subtitle('It is positive');
   	}
