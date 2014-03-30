@@ -4,7 +4,7 @@ console.log('Whattaaaaaap');
 simply.on('singleClick', function(e) {
   console.log(util2.format('single clicked $button!', e));
   simply.vibe();
-  simply.on('accelTap', function(e) {
+  simply.on('accelData', function(e) {
   	simply.body(e.accel.x);
   	//simply.subtitle('Tapped' + e.axis);
   	if (e.axis === 'y')
