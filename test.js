@@ -6,11 +6,12 @@ simply.on('singleClick', function(e) {
   simply.vibe();
   simply.on('accelData', function(e) {
   	simply.body(e.accel.x + "  " + e.accel.y);
-  	
+  	console.log(typeof e.accel.x);
+  	/*
   	if (e.accel.x > 200 && e.accel.y > 200)
   	{
   	  simply.subtitle('It is positive');
-  	}
+  	}*/
   	
   	//simply.subtitle('Tapped' + e.axis);
   	if (e.axis === 'y')
