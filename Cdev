@@ -1,8 +1,4 @@
-int main(void) {
-	init();
-	app_event_loop();
 
-}
 
 static void init() {
 	window = window_create();
@@ -21,3 +17,8 @@ void accel_data_handler(AccelData *data, uint32_t num_samples)
 	vibes_long_pulse();
 }
 
+int main(void) {
+	init();
+	app_event_loop();
+
+}
