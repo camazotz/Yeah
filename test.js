@@ -7,9 +7,9 @@ simply.on('singleClick', function(e) {
   simply.on('accelData', function(e) {
   	simply.body(e.accel.x + "  " + e.accel.y);
   	
-  	if (e.accel.x > 0 && e.accel.y > 0)
+  	if (e.accel.x > 200 && e.accel.y > 200)
   	{
-  	  simply.subtitle('in if');
+  	  simply.subtitle('It is positive');
   	}
   	
   	//simply.subtitle('Tapped' + e.axis);
@@ -30,7 +30,7 @@ simply.on('longClick', function(e) {
 
 simply.on('accelTap', function(e) {
   console.log(util2.format('tapped accel axis $axis $direction!', e));
-  simply.subtitle('Tapped ' + (e.direction > 0 ? '+' : '-') + e.axis + '!');
+  simply.subtitle('wrong move');
 });
 
 simply.setText({
