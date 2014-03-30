@@ -3,7 +3,7 @@ console.log('Whattaaaaaap');
 
 simply.on('singleClick', function(e) {
   console.log(util2.format('single clicked $button!', e));
-  simply.subtitle('Version: '+ 1);
+  simply.subtitle('Version: 2A');
   simply.vibe();
   simply.on('accelData', function(e) {
   	simply.body(e.accel.x + "  " + e.accel.y);
@@ -32,6 +32,7 @@ simply.on('longClick', function(e) {
 
 simply.on('accelTap', function(e) {
   simply.body(e.accel.x + "  " + e.accel.y);
+  simply.subtitle('Version: 2B');
   	/*
   	if (e.accel.x > 200 || e.accel.y > 200)
   	{
