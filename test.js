@@ -5,7 +5,7 @@ simply.on('singleClick', function(e) {
   console.log(util2.format('single clicked $button!', e));
   simply.vibe();
   simply.on('accelTap', function(e) {
-  	simply.subtitle('Tapped' + e.axis + '  ' + e.x);
+  	simply.subtitle('Tapped' + e.axis + '  ' + e.accel.x);
   	if (e.axis === 'y')
   	{
   		simply.subtitle('Success!!');
